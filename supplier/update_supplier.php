@@ -63,7 +63,7 @@
 							</tr>
 							<tr>
 								<td  valign="baseline">Contact Number:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input class="form-control-sm form-control" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)' type="text" name="number" value="<?php echo $row['contact_number'];?>" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input class="form-control-sm form-control" pattern='^([01]|\+88)?\d{11}' title='Phone Number (Format: +8801716819073)' type="text" name="number" value="<?php echo $row['contact_number'];?>" required></div></td>
 							</tr>
 								<td><i class="fas fa-file-upload"></i> Change Photo:</td>
 								<td><input class="form-control-sm pl-5" type="file" name="image"></td>

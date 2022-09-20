@@ -1,5 +1,5 @@
 <?php
-$database	= 'PointOfSale';
+$database  ='PointOfSale';
 $username	= 'root';
 $host		= 'localhost';
 $password	= '';

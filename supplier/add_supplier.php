@@ -21,7 +21,7 @@
 				</div>
 			<form method="post" enctype="multipart/form-data">
 				<input type="hidden" name="size" class="form-control-sm" value="1000000">
-				<input class="form-control-sm" type="file" name="image" required>
+				<input class="form-control-sm" type="file" name="image">
 				<p class="bg-danger mt-3"><?php echo $msg;?></p>
 			</div>
 			<div class="second_side ml-3">
@@ -46,7 +46,7 @@
 							</tr>
 							<tr>
 								<td  valign="baseline">Contact Number:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="text" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)' class="form-control-sm form-control" name="number" placeholder="Enter Conctact Number" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="text" pattern='^([01]|\+88)?\d{11}' title='Phone Number (Format: +8801716819073' class="form-control-sm form-control" name="number" placeholder="Enter Conctact Number" required></div></td>
 							</tr>
 						</tbody>
 					</table>

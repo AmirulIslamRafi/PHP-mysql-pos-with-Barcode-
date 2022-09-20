@@ -1,14 +1,10 @@
-# Point of Sale on PHP
+# POS - Software 
+## On Production   
+## -- Amirul Islam   
 
 This is a simple POS and Inventory system built with PHP, Bootstrap, Jquery and MySQL as Database
 
-## Demo
 
-Demo Link: [Youtube Video](https://www.youtube.com/watch?v=JNHXUDmNwag)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -19,18 +15,7 @@ PHP 5.3.7 and higher
 MySQL 8.0
 ```
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-```
-Clone or download the repository.
-```
-and
-```
-Setup the database and create your login details
-```
 
 ## Built With
 
@@ -45,13 +30,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Ronil Cajan - [@RonCajan](https://twitter.com/RonCajan) - cajanr02@gmail.com
+Amirul Islam - [@AmirulIslam](https://twitter.com/AmirulIslam) - rafikhanctg@gmail.com
 
-Project Link: [https://github.com/ronilcajan/PointOfSale](https://github.com/ronilcajan/PointOfSale)
+Project Link: [https://github.com/AmirulIsalmRafi/](https://github.com/AmirulIsalmRafi)
 
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

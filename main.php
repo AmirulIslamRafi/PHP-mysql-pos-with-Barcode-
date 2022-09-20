@@ -8,6 +8,7 @@
 	$undelete = isset($_GET['undelete']);
 	$updated = '';
 	$deleted = '';
+	$issuimage = '';
 	$failure = isset($_GET['failure']);
 	
 	$query 	= "SELECT * FROM `customer`";

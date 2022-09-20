@@ -7,6 +7,10 @@
 		echo 
 			'<script>swal("","Successfully Added!","success");</script>';
 	}
+	if($issuimage){
+		echo 
+			'<script>swal("","Images are missing! Successfully Added!","warning");</script>';
+	}
 	if($updated){
 		echo 
 			'<script>swal("","Successfully Updated!","success");</script>';
