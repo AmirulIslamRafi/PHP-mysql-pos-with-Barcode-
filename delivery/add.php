@@ -56,7 +56,7 @@
 					if(mysqli_num_rows($result1)>0){
 						while($row = mysqli_fetch_array($result1)){
 							$newqty = $row['quantity'] + $qty_1;
-							$query1 = "UPDATE products SET product_name='$product_1',sell_price = $sell_price_1,quantity = $newqty,unit = '$unit_1',min_stocks=$min_qty_1, remark='$remarks_1', location='$location_1' WHERE product_no = '$barcode_1'";
+							$query1 = "UPDATE products SET product_name='$product_1',sell_price = $sell_price_1,buy_price= $buy_price_1,quantity = $newqty,unit = '$unit_1',min_stocks=$min_qty_1, remark='$remarks_1', location='$location_1' WHERE product_no = '$barcode_1'";
 							mysqli_query($db, $query1);
 						}
 						$insert .= "
@@ -65,8 +65,8 @@
 						";
 					}else{
 						$insert .= "
-						INSERT INTO products(product_no,product_name,sell_price,quantity,unit,min_stocks,remarks,location) 
-						VALUES('$barcode_1','$product_1',$sell_price_1,$qty_1,'$unit_1',$min_qty_1,'$remarks_1','$location_1');
+						INSERT INTO products(product_no,product_name,sell_price,buy_price,quantity,unit,min_stocks,remarks,location) 
+						VALUES('$barcode_1','$product_1',$sell_price_1,$buy_price_1,$qty_1,'$unit_1',$min_qty_1,'$remarks_1','$location_1');
 							";
 
 						$insert .= "

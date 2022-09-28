@@ -83,7 +83,7 @@
 				<small>
 					<ul class="text-white justify-content-center">
 						<li class="d-flex mb-0">Total (৳): <p id="totalValue1" class="mb-0 ml-5 pl-3">0.00</p></li>
-						<li class="mb-0 mt-0">Discount (৳): <input style="width: 100px" class="text-right form-control-sm" type="number" name="discount" value="0" min="0" placeholder="Enter Discount" id="discount" ></li>
+						<li class="mb-0 mt-0">Discount (<big>৳</big>)% : <input style="width: 100px" class="text-right form-control-sm" type="number" name="discount" value="0" min="0" placeholder="Enter Discount" id="discount" > <big> %</big></li>
 					</ul>
 				</small>
 				</div>

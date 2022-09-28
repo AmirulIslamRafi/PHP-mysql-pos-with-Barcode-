@@ -68,8 +68,8 @@
 									<div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-user-tag"></i></span></div>
 									<select name="position" class="form-control-sm form-control" required>
-										<option value="Admin">Admin</option>
 										<option value="Employee">Employee</option>
+										<option value="Admin">Admin</option>
 									</select>
 								</div>
 								</td>

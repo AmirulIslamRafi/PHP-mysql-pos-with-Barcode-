@@ -44,15 +44,16 @@ function GrandTotal(){
   var TotalValue = 0;
   var TotalPriceArr = $('#tableData tr .totalPrice').get()
   var discount = $('#discount').val();
-
+  
   $(TotalPriceArr).each(function(){
     TotalValue += parseFloat($(this).text().replace(/,/g, "").replace("৳",""));
   });
 
   if(discount != null){
     var f_discount = 0;
-
+    discount = (discount/100) * TotalValue;
     f_discount = TotalValue - discount;
+
 
     $("#totalValue").text(accounting.formatMoney(f_discount,{symbol:"৳",format: "%s %v"}));
     $("#totalValue1").text(accounting.formatMoney(TotalValue,{format: "%v"}));

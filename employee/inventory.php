@@ -9,6 +9,7 @@
 	$undelete = isset($_GET['undelete']);
 	$failure = "";
 	$error = '';
+	$issuimage = '';
 ?>
 <!DOCTYPE html>
 <html>
@@ -42,7 +43,7 @@
 					<tr class="table-active">
 						<td><?php echo $row['product_no'];?></td>
 						<td><?php echo $row['product_name'];?></td>
-						<td align="right">₱&nbsp<?php echo $row['sell_price'];?></td>
+						<td align="right">৳<?php echo $row['sell_price'];?></td>
 						<td><?php echo $row['quantity'];?></td>
 						<td><?php echo $row['unit'];?></td>
 						<td><?php echo $row['min_stocks'];?></td>

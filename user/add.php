@@ -10,7 +10,7 @@
 		$position = mysqli_real_escape_string($db, $_POST['position']);
 		$password = mysqli_real_escape_string($db, $_POST['password']);
 		$password1 = mysqli_real_escape_string($db, $_POST['password1']);
-	  	$image    = $_FILES['image']['name'];
+	  	$image    = $_FILES['image']['name'] || '';
 		$target   = "../images/".basename($_FILES['image']['name']);
 
 		$query = "SELECT username FROM users WHERE username='$username'";
@@ -31,8 +31,10 @@
 				$insert	= "INSERT INTO logs (username,purpose) VALUES('$user','User $firstname added')";
  				$logs = mysqli_query($db,$insert);
 				header('location: ../user/user.php?added');
-	  		}else{
+	  		}elseif (isset($_FILES['image'])) {
 				$msg = "There was a problem uploading the image!";
+			} else{
+				header('location: ../user/user.php?issuimage');
 	  		}
 		}
 	}

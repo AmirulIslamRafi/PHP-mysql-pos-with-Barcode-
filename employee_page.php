@@ -11,6 +11,7 @@
 	$failure = isset($_GET['failure']);
 	$query 	= "SELECT * FROM `customer`";
 	$show	= mysqli_query($db,$query);
+	$issuimage = '';
 	if(isset($_SESSION['username'])){
 		$user = $_SESSION['username'];
 		$sql = "SELECT position FROM users WHERE username='$user'";
