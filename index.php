@@ -6,8 +6,8 @@
 	<?php include('templates/head.php'); ?>
 	<script src="bootstrap4/jquery/sweetalert.min.js"></script>
 </head>
-<body class="bg-light">
-	<div class="text-center border border-light">
+<body class="bg-dark">
+	<div class="text-center border border-dark">
 		<div class="main">
 			<img class="img-fluid" src="images/logo.png"/>
   			<?php include('error.php');?>

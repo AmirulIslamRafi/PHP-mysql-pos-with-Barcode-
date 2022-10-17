@@ -63,7 +63,7 @@ $(document).ready(function(){
 	$(document).on('click','.remove_row',function(){
 		var row_id = $(this).attr("id");
 		var total_product_amount = $('#total_amount'+row_id).val().replace("P","");
-		var final_amount = $('#final_total_amount').text().replace("৳","");
+		var final_amount = $('#final_total_amount').text().replace("₱","");
 		var result_amount = parseFloat(final_amount) - parseFloat(total_product_amount);
 		if(isNaN(result_amount)){
 

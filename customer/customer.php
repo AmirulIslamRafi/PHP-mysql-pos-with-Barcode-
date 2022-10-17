@@ -5,7 +5,6 @@
 	$result	= mysqli_query($db, $sql);
 	$deleted = isset($_GET['deleted']);
 	$added  = isset($_GET['added']);
-	$issuimage  = isset($_GET['issuimage']);
 	$updated = isset($_GET['updated']);
 	$undelete = isset($_GET['undelete']);
 	$failure = "";
@@ -30,7 +29,7 @@
 			<table class="table table-striped table-bordered" id="customer_table" style="margin-top: -22px;">
 				<thead> 
 					<tr>
-						<th scope="col" class="column-text">Customer Photo</th>
+						<th scope="col" class="column-text">Customer ID</th>
 						<th scope="col" class="column-text">Customer Name</th>
 						<th scope="col" class="column-text">Address</th>
 						<th scope="col" class="column-text">Contact Number</th>
@@ -42,14 +41,7 @@
 						while($row = mysqli_fetch_assoc($result)){
 				  	?>
 					<tr class="table-active">
-						<td>
-							
-						<?php echo "<img width='140' height='70' style='border:1px; border-radius:2px' src='../images/".$row['image']."'>";?>
-						
-						<!-- <a href="customer_sales.php?customer_id=<?php echo $row['customer_id'];?>"><?php echo $row['customer_id'];?></a>
-						 -->
-					
-						</td>
+						<td><a href="customer_sales.php?customer_id=<?php echo $row['customer_id'];?>"><?php echo $row['customer_id'];?></a></td>
 						<td><?php echo $row['firstname'].'&nbsp'.$row['lastname'];?></td>
 						<td><?php echo $row['address'];?></td>
 						<td><?php echo $row['contact_number'];?></td>

@@ -6,7 +6,7 @@
 		$lname 		= mysqli_real_escape_string($db, $_POST['lname']);
 		$address	= mysqli_real_escape_string($db, $_POST['address']);
 		$number		= mysqli_real_escape_string($db, $_POST['number']);
-	  	$image   	= $_FILES['image']['name'] || '';
+	  	$image   	= $_FILES['image']['name'];
 		$target   	= "../images/".basename($_FILES['image']['name']);
 		$user 		= $_SESSION['username'];
 
@@ -18,6 +18,5 @@
 			header('location: ../customer/customer.php?added');
 	  	}else{
 			array_push($alert,"There was a problem uploading the image!");
-			header('location: ../customer/customer.php?issuimage');
 	  	}
 	}

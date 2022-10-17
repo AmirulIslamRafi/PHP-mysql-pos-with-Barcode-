@@ -8,8 +8,7 @@
 	$updated = isset($_GET['updated']);
 	$undelete = isset($_GET['undelete']);
 	$error = isset($_GET['error']);
-	$failure = "";
-	$issuimage= '';	
+	$failure = "";	
 ?>
 <!DOCTYPE html>
 <html>

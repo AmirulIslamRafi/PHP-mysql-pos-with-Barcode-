@@ -7,7 +7,7 @@
 		$lastname 	= mysqli_real_escape_string($db, $_POST['lastname']);
 		$address 	= mysqli_real_escape_string($db, $_POST['address']);
 		$number 	= mysqli_real_escape_string($db, $_POST['number']);
-	  	$image    	= $_FILES['image']['name'] || '';
+	  	$image    	= $_FILES['image']['name'];
 		$target   	= "../images/".basename($_FILES['image']['name']);
 		$user 		= $_SESSION['username'];
 
@@ -18,10 +18,7 @@
 			$query 	= "INSERT INTO logs (username,purpose) VALUES('$user','Supplier $company added')";
  			$insert = mysqli_query($db,$query);
 			header('location: ../supplier/supplier.php?added');
-	  	}elseif (isset($_FILES['image'])) {
-			$msg = "There was a problem uploading the image elseif!";
-		}{
+	  	}else{
 			$msg = "There was a problem uploading the image!";
-			header('location: ../supplier/supplier.php?issuimage');
 		}
 	}

@@ -51,7 +51,7 @@
 							</tr>
 							<tr>
 								<td  valign="baseline">Contact number:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="tel" name="number" pattern='^([01]|\+88)?\d{11}' title='Phone Number (Format: +8801716819073)' class="form-control form-control-sm" placeholder="Enter Contact number" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="tel" name="number" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)' class="form-control form-control-sm" placeholder="Enter Contact number" required></div></td>
 							</tr>
 							<tr>
 								<td  valign="baseline">Password:</td>
@@ -68,8 +68,8 @@
 									<div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">
 									<i class="fas fa-user-tag"></i></span></div>
 									<select name="position" class="form-control-sm form-control" required>
-										<option value="Employee">Employee</option>
 										<option value="Admin">Admin</option>
+										<option value="Employee">Employee</option>
 									</select>
 								</div>
 								</td>

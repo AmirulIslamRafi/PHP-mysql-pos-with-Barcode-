@@ -8,7 +8,6 @@
 	$added  = isset($_GET['added']);
 	$updated = isset($_GET['updated']);
 	$undelete = isset($_GET['undelete']);
-	$issuimage  = isset($_GET['issuimage']);
 	$error = '';
 	$failure = "";
 ?>

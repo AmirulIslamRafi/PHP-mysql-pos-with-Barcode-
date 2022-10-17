@@ -45,10 +45,10 @@
 						<td><?php echo $row1['product_no'];?></td>
 						<td><?php echo $row1['product_name'];?></td>
 						<td><?php echo $row1['total_qty'];?></td>
-						<td>৳<?php echo $row1['buy_price'];?></td>
+						<td>₱<?php echo $row1['buy_price'];?></td>
 						<td><?php echo $row1['unit'];?></td>
 						<td><?php echo $row1['tax_rate'];?>%</td>
-						<td>৳<?php echo $row1['sell_price'];?></td>
+						<td>₱<?php echo $row1['sell_price'];?></td>
 					</tr>
 					<?php } ?>
 					</tbody>
