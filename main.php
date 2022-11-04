@@ -52,7 +52,7 @@
 				</table>
 			</div>
 			<div class="header_price border p-0">
-				<h5>Grand Total</h5>
+				<h5 style="padding-left:5px;">Grand Total</h5>
 				<p class="pb-0 mr-2" style="float: right; font-size: 40px;" id="totalValue">৳ 0.00</p>
 			</div>
 		</div>
@@ -82,7 +82,7 @@
 				<small>
 					<ul class="text-white justify-content-center">
 						<li class="d-flex mb-0">Total (৳): <p id="totalValue1" class="mb-0 ml-5 pl-3">0.00</p></li>
-						<li class="mb-0 mt-0">Discount (৳): <input style="width: 100px" class="text-right form-control-sm" type="number" name="discount" value="0" min="0" placeholder="Enter Discount" id="discount" ></li>
+						<li class="mb-0 mt-0">Discount (<big>৳</big>) %: <input style="width: 100px" class="text-right form-control-sm" type="number" name="discount" value="0" min="0" placeholder="Enter Discount %" id="discount" ></li>
 					</ul>
 				</small>
 				</div>
@@ -93,7 +93,7 @@
 			<div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span></div>
    				<input class="form-control" type="text" placeholder="Product Search" aria-label="Search" id="search" name="search" onkeyup="loadproducts();"/>
    			</div></div>
-			<div id="product_area" class="table-responsive-sm mt-2 table-wrapper-scroll-y my-custom-scrollbar" >
+			<div id="product_area" style="padding:5px;" class="table-responsive-sm mt-2 table-wrapper-scroll-y my-custom-scrollbar" >
 				<table class="w-100 table-striped font-weight-bold" style="cursor: pointer;" id="table1">
 					<thead>
 						<tr claclass='text-center'><b>
@@ -122,7 +122,7 @@
 			<button id="buttons" onclick="window.location.href='logs/logs.php'" class="btn btn-secondary border mr-2"><i class="fas fa-globe"></i> Logs</button>
 			<button id="buttons" onclick="window.location.href='cashflow/cashflow.php'" class="btn btn-secondary border mr-2"><i class="fas fa-money-bill-wave"></i> Cash-Flow</button>
 			<button id="buttons" onclick="window.location.href='sales/sales.php'" class="btn btn-secondary border mr-2"><i class="fas fa-shopping-cart"></i> Sales</button>
-			<button id="buttons" onclick="window.location.href='delivery/delivery.php'" class="btn btn-secondary border mr-2"><i class="fas fa-truck"></i> Deliveries</button>
+			<button id="buttons" onclick="window.location.href='delivery/delivery.php'" class="btn btn-secondary border mr-2"><i class="fas fa-truck"></i>Delivery</button>
 			<button id="buttons" name="logout" type="button" onclick="out();" class="logout btn btn-danger border mr-2"><i class="fas fa-sign-out-alt"></i> Logout</button> 
 		</div>
 	</div>

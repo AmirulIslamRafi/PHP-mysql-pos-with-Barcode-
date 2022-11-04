@@ -1,4 +1,4 @@
-<title>POS.PHP</title>
+<title>Ontu Gift Shop</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" type="image/png" sizes="180x180" href="../images/icon.png"/>

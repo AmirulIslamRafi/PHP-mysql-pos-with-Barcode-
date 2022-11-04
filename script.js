@@ -52,7 +52,7 @@ function GrandTotal(){
   if(discount != null){
     var f_discount = 0;
 
-    f_discount = TotalValue - discount;
+    f_discount = TotalValue - (discount/100)*TotalValue;
 
     $("#totalValue").text(accounting.formatMoney(f_discount,{symbol:"৳",format: "%s %v"}));
     $("#totalValue1").text(accounting.formatMoney(TotalValue,{format: "%v"}));
