@@ -18,8 +18,11 @@
 
 </head>
 <body>
-	<div class="contain h-100">
-		<?php include('../user/base.php');?>
+<?php include('../templates/nav.php')?>
+<div class="contain h-100" style="display: flex; width:100%">
+		<div class="side" style="display: flex; width:30%;">
+			<?php include('../user/base.php');?>
+		</div>
 		<div>
 			<h1 class="ml-4 pt-2"><i class="fas fa-users"></i> User Management</h1>
 			<hr>

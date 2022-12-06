@@ -5,6 +5,16 @@
 <head>
 	<?php include('templates/head.php'); ?>
 	<script src="bootstrap4/jquery/sweetalert.min.js"></script>
+	<style>
+		.img-fluid{
+			height: 350px;
+		}
+		@media  only screen and (min-width: 1000px) {
+			.img-fluid{
+				height: 500px;
+			}
+		}
+	</style>
 </head>
 <body class="bg-dark">
 	<div class="text-center border border-dark">

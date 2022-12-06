@@ -6,7 +6,7 @@
 		$lname 		= mysqli_real_escape_string($db, $_POST['lname']);
 		$address	= mysqli_real_escape_string($db, $_POST['address']);
 		$number		= mysqli_real_escape_string($db, $_POST['number']);
-	  	$image   	= $_FILES['image']['name'];
+	  	$image   	= $_FILES['image']['name'] || "";
 		$target   	= "images/".basename($_FILES['image']['name']);
 		
 		$sql  = "INSERT INTO customer (firstname,lastname,address,contact_number,image) VALUES ('$fname','$lname','$address','$number','$image')";
@@ -15,7 +15,9 @@
  			$query 	= "INSERT INTO logs (username,purpose,logs_time) VALUES('$user','Customer $fname Added',CURRENT_TIMESTAMP)";
  			$insert 	= mysqli_query($db,$query);
 			header('location: main.php?username='.$user.'&added');
-	  	}else{
+	  	}
+
+		else{
 			$msg = "Something went wrong!";
 	  	}
 	}

@@ -1,7 +1,7 @@
 <?php
 $database	= 'pos';
 $username	= 'root';
-$host		= 'localhost';
+$host		= '127.0.0.1';
 $password	= '';
 $msg 		= '';
 

@@ -24,7 +24,7 @@
 				</div>
 			<form method="post" enctype="multipart/form-data">
 				<input type="hidden" name="size" class="form-control-sm" value="1000000">
-				<input class="form-control-sm" type="file" name="image" required>
+				<input class="form-control-sm" type="file" name="image">
 				<p class="bg-danger mt-3">
 			</div>
 			<div class="second_side">
@@ -32,11 +32,11 @@
 						<tbody>
 							<tr>
 								<td  valign="baseline">First Name:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-pen-alt"></i></span></div><input type="text" name="fname" class="form-control-sm form-control" pattern="[A-Za-z]+" title="Name must not contain numbers or spaces e.g John12" placeholder="Enter Firstname" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-pen-alt"></i></span></div><input type="text" name="fname" class="form-control-sm form-control" pattern="[A-Za-z]+" title="Name must not contain numbers or spaces e.g Rafi24" placeholder="Enter Firstname" required></div></td>
 							</tr>
 							<tr>
 								<td  valign="baseline">Last Name:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-pen-alt"></i></span></div><input type="text" name="lname" class="form-control-sm form-control" pattern="[A-Za-z]+" title="Name must not contain numbers or spaces e.g John12" placeholder="Enter Lastname" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-pen-alt"></i></span></div><input type="text" name="lname" class="form-control-sm form-control" pattern="[A-Za-z]+" title="Name must not contain numbers or spaces e.g Rafi24" placeholder="Enter Lastname" required></div></td>
 							</tr>
 							<tr>
 								<td  valign="baseline">Address:</td>
@@ -44,7 +44,7 @@
 							</tr>
 							<tr>
 								<td  valign="baseline">Contact Number:</td>
-								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="text" name="number" class="form-control-sm form-control" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' title='Phone Number (Format: +99(99)9999-9999)' placeholder="Enter Contact number" required></div></td>
+								<td class="pl-5 pb-2"><div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-phone"></i></span></div><input type="text" name="number" class="form-control-sm form-control" pattern='[01]|\+88)?\d{11}' title='Phone Number (Format: +880-1716819073)' placeholder="Enter Contact number" required></div></td>
 							</tr>
 						</tbody>
 					</table>
