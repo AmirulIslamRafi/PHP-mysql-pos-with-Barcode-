@@ -15,15 +15,39 @@
 <html>
 <head>
 	<?php include('../templates/head1.php');?>
-
+	<style>
+	@media only screen and (min-width: 1300px){
+			.mainCon{
+				height: 100%;
+			}
+			.contain{
+				height: 82%;
+			}
+		}
+		@media  only screen and (max-width: 984px) {
+			
+			.mainCon{
+				height: 423px;
+			}
+			.contain{
+				height: 434px;
+			}
+			}
+			.fixed-bottom{
+				width: 30%;
+			}
+			.sidebar{
+				width: 100%;
+			}
+			</style>
 </head>
 <body>
 <?php include('../templates/nav.php')?>
-<div class="contain h-100" style="display: flex; width:100%">
-		<div class="side" style="display: flex; width:30%;">
+<div class="contain" style="display: flex; width:100%">
+		<div class="side" style="display: flex; width:22%;">
 			<?php include('../user/base.php');?>
 		</div>
-		<div>
+		<div class="mainCon">
 			<h1 class="ml-4 pt-2"><i class="fas fa-users"></i> User Management</h1>
 			<hr>
 				<?php include('../alert.php');?>

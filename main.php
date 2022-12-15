@@ -40,12 +40,23 @@
     height: 70%;
     margin-top: 50px;
 		}
-		@media only screen and (min-width: 900px){
+		@media only screen and (min-width: 500px){
 			#header{
 				height: 100px;
 			}
 			#container{
 				height: 550px;
+			}
+			#content{
+				height: 100%;
+			}
+			/* #price_column{
+				height: 100%;
+			} */
+			#time{
+				color:#fff;
+			}.dateTime{
+				margin-top: 20px;
 			}
 	
 		}
@@ -57,11 +68,24 @@
 				
 			}
 			 */
+			
+			#content{
+				height: 300px;
+			}
+			#price_column{
+				height: 220px;
+			}
+			#time{
+				color:red;
+			}
+			.dateTime{
+				margin-top: 5px;
+			}
 	
 		}
 	</style>
 </head>
-<body>
+<body id="body">
 	<div class="h-100 bg-dark" id="container">
 		<div id="header" style="display: flex; width:100%;">
 			<?php include('alert.php'); ?>
@@ -73,12 +97,13 @@
 					<tbody>
 						<tr>
 							<td valign="baseline"><small>User:</small></td>
+							<td valign="baseline"><button id="btnPrint" onclick="printPage()">hit</button></td>
 							<td valign="baseline"><small><p class="pt-3 ml-5"><i class="fas fa-user-shield"></i> <?php echo $row['position'];}}}?></p></small></td>
 						</tr>
-						<tr>
+						<!-- <tr>
 							<td valign="baseline"><small class="pb-1">Date:</small></td>
 							<td valign="baseline"><small><p class="p-0 ml-5"><i class="fas fa-calendar-alt">&nbsp</i><span id='time'></span></p></small></td>
-						</tr>
+						</tr> -->
 						<tr>
 							<td valign="baseline"><small class="mt-5">Customer Name:</small></td>
 							<td valign="baseline"><small><div class="content p-0 ml-5"><input type="text" class="form-control form-control-sm customer_search" autocomplete="off" data-provide="typeahead" id="customer_search" placeholder="Customer Search" name="customer"/></small></div>
@@ -87,6 +112,7 @@
 						</tr>
 					</tbody>
 				</table>
+				<small><p class="p-0 ml-5 dateTime"><i class="fas fa-calendar-alt">&nbsp</i><span id='time'></span></p></small>
 			</div>
 			<div class="header_price border p-0" style="margin: 5px !important;width: 30%">
 				<h5 style="padding-left:5px;">Grand Total</h5>
@@ -168,10 +194,25 @@
 			<button id="buttons" style="flex-grow: 1;" onclick="window.location.href='delivery/delivery.php'" class="btn btn-secondary border mr-2"><i class="fas fa-truck"></i>Delivery</button>
 			<button id="buttons" style="flex-grow: 1;" name="logout" type="button" onclick="out();" class="logout btn btn-danger border mr-2"><i class="fas fa-sign-out-alt"></i> Logout</button> 
 		</div>
+		<!-- <div id="kutta">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cupiditate. Velit iste modi obcaecati dolore in nihil vero, excepturi, quam officia illo placeat ullam.
+		</div> -->
 	</div>
 	<?php include('add.php');?>
 	<?php include('templates/js_popper.php');?>
 	<script type="text/javascript" src="script.js"></script>
 	<script src="bootstrap4/js/time.js"></script>
+
 </body>
-</html> 
+<script>
+	function printPage(){
+		let body = document.getElementById("body").innerHTML;
+		let data = document.getElementById("product_area").innerHTML;
+		document.getElementById("body").innerHTML = data;
+		window.print();
+		document.getElementById("body").innerHTML = body;
+
+	}
+</script>
+</html>
+

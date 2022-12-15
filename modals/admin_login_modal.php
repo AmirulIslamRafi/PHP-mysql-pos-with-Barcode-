@@ -10,7 +10,7 @@
 					<input type="hidden" name="position" value="admin"/>
 					<input type="hidden" name="username" value=""/>
 					<div class="input-group"><div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span></div>
-					<input class="form-control-sm form-control" id="pass" type="password" name="password" placeholder="Enter Password" required/></div>
+					<input class="form-control-sm form-control" id="pass" type="password" name="password" placeholder="Enter Password" autofocus required/></div>
 				</div>
 				<div class="modal-footer ">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-ban"></i> Close</button>
