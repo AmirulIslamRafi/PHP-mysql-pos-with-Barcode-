@@ -38,7 +38,7 @@
 			display: flex;
     width: 100%;
     justify-content: center;
-    height: 70%;
+    height: 65%;
     margin-top: 50px;
 		}
 		@media only screen and (min-width: 500px){
@@ -177,10 +177,10 @@
 					</thead>
 				</table>
 			</div>
-			<div class="w-100 mt-2" id="enter_area" style="display: flex; justify-content:center; align-items:center">
-				<button id="buttons" type="button" class="cancel btn btn-secondary border" style="width: 50%"><i class="fas fa-ban"></i> Cancel</button>
-				<button id="btnPrint" onclick="printPage()" type="button" style="    width: 50%;
-    height: 50px;" class="cancel btn btn-secondary border"><i class="fas fa-print"></i> Print Token</button>
+			<div class="w-100 mt-2" id="enter_area" style="display: flex; justify-content:center; align-items:center;">
+				<button id="buttons" type="button" class="cancel btn btn-secondary border" style="width: 40%;padding:5px"><i class="fas fa-ban"></i> Cancel</button>
+				<button id="btnPrint" onclick="printPage()" type="button" style="width: 40%;
+    height: 50px;" class="cancel btn btn-secondary border  ml-5"><i class="fas fa-print"></i> Print Token</button>
 			</div>
 		</div>
 		</div>

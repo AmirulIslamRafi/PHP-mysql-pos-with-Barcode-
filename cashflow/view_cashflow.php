@@ -20,7 +20,7 @@
 				</tr>
 				<tr>
 					<td><label>Amount :</label></td>  
-					<td><strong>P'.$row["amount"].'</strong></td> 
+					<td><strong>৳'.$row["amount"].'</strong></td> 
 				</tr>
 				<tr>';  
 	  }  

@@ -29,7 +29,7 @@
  			if($result == true){
  				$query 	= "INSERT INTO logs (username,purpose) VALUES('$username','Product $pro_name updated')";
  				mysqli_query($db,$query);
- 				echo $sql;
+ 				// echo $sql;
  	 			header('location: ../products/products.php?updated');
  			}
  		}
