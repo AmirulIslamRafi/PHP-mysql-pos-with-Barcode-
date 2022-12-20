@@ -43,7 +43,7 @@
 						<td><?php echo $row1['product_id'];?></td>
 						<td><?php echo $row1['product_name'];?></td>
 						<td><?php echo $row1['qty'];?></td>
-						<td>₱<?php echo $row1['price'];?></td>
+						<td>৳<?php echo $row1['price'];?></td>
 						<td><?php echo $row1['unit'];?></td>
 					</tr>
 					<?php } ?>

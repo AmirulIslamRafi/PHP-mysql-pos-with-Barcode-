@@ -45,12 +45,18 @@
 					
 				</tbody>
 				<tfoot>
-					<th colspan="3" class="text-right">Total:</th>
+					<th colspan="3" class="text-left">Total:</th>
 					<th id="discount"></th>
 					<th id="sales"></th>
-					<th></th>
+					<th id="profit">Profit:</th>
 				</tfoot>				
 			</table>
+			<div class="Profit_day">
+				<?php 
+				$qurry= "SELECT `buy_price` FROM `product_delivered` WHERE `product_id` = 1;"; 
+				// SELECT product_delivered.buy_price,sales.discount , sales.total as TotalPrice,username,date,customer.firstname,customer.lastname FROM sales_product JOIN sales ON sales_product.reciept_no=sales.reciept_no JOIN customer ON sales.customer_id = customer.customer_id
+				?>
+			</div>
 			</div>
 		</div>
 	</div>
