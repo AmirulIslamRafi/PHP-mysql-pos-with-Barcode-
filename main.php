@@ -25,6 +25,7 @@
 <head>
 	<?php include('templates/head.php'); ?>
 	<style>
+	
 		#container{
 			display: flex;
 			flex-direction: column;
@@ -97,7 +98,6 @@
 					<tbody>
 						<tr>
 							<td valign="baseline"><small>User:</small></td>
-							<td valign="baseline"><button id="btnPrint" onclick="printPage()">hit</button></td>
 							<td valign="baseline"><small><p class="pt-3 ml-5"><i class="fas fa-user-shield"></i> <?php echo $row['position'];}}}?></p></small></td>
 						</tr>
 						<!-- <tr>
@@ -177,12 +177,16 @@
 					</thead>
 				</table>
 			</div>
-			<div class="w-100 mt-2" id="enter_area">
-				<button id="buttons" type="button" class="cancel btn btn-secondary border"><i class="fas fa-ban"></i> Cancel</button>
+			<div class="w-100 mt-2" id="enter_area" style="display: flex; justify-content:center; align-items:center">
+				<button id="buttons" type="button" class="cancel btn btn-secondary border" style="width: 50%"><i class="fas fa-ban"></i> Cancel</button>
+				<button id="btnPrint" onclick="printPage()" type="button" style="    width: 50%;
+    height: 50px;" class="cancel btn btn-secondary border"><i class="fas fa-print"></i> Print Token</button>
 			</div>
 		</div>
 		</div>
-		
+			<div id="kutta" style="display:none;">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cupiditate. Velit iste modi obcaecati dolore in nihil vero, excepturi, quam officia illo placeat ullam.
+		</div>
 		<div id="footer" class="w-100" style="display: flex; width:100%">
 			<button id="buttons" style="flex-grow: 1;" onclick="window.location.href='user/user.php'" class="btn btn-secondary border mr-2 ml-2"><i class="fas fa-users"></i> User</button>
 			<button id="buttons" style="flex-grow: 1;" onclick="window.location.href='products/products.php'" class="btn btn-secondary border mr-2"><i class="fas fa-box-open"></i> Product</button>
@@ -194,9 +198,7 @@
 			<button id="buttons" style="flex-grow: 1;" onclick="window.location.href='delivery/delivery.php'" class="btn btn-secondary border mr-2"><i class="fas fa-truck"></i>Delivery</button>
 			<button id="buttons" style="flex-grow: 1;" name="logout" type="button" onclick="out();" class="logout btn btn-danger border mr-2"><i class="fas fa-sign-out-alt"></i> Logout</button> 
 		</div>
-		<!-- <div id="kutta">
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, cupiditate. Velit iste modi obcaecati dolore in nihil vero, excepturi, quam officia illo placeat ullam.
-		</div> -->
+	
 	</div>
 	<?php include('add.php');?>
 	<?php include('templates/js_popper.php');?>
@@ -207,7 +209,8 @@
 <script>
 	function printPage(){
 		let body = document.getElementById("body").innerHTML;
-		let data = document.getElementById("product_area").innerHTML;
+		let data = document.getElementById("kutta").innerHTML;
+		
 		document.getElementById("body").innerHTML = data;
 		window.print();
 		document.getElementById("body").innerHTML = body;

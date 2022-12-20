@@ -362,11 +362,11 @@ $(document).ready(function(){
 				var minus_total = parseFloat(final_amount) - parseFloat(total_product_amount);
 				$('#total_amount').text('₱ '+minus_total);
 			}else{
-				$('#final_total_amount').text('₱ 0.00');
+				$('#final_total_amount').text('৳ 0.00');
 			}
 			
 		}else{
-			$('#final_total_amount').text('₱ '+result_amount);
+			$('#final_total_amount').text('৳ '+result_amount);
 		}
 		
 		$('#row_id_'+row_id).remove();

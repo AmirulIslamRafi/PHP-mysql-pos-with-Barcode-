@@ -1,5 +1,6 @@
 <?php
 	include('../server/connection.php');
+	$user = $_SESSION['username'];
 	$alert		= array();
   	if(isset($_POST['update_customer'])){
 		$target   	= "../images/".basename($_FILES['image']['name']);

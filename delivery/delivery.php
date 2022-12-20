@@ -7,7 +7,9 @@
 <html>
 <head>
 	<?php include('../templates/head1.php');?>
-
+<style>
+	
+</style>
 </head>
 <body>
 	<div class="contain h-100">

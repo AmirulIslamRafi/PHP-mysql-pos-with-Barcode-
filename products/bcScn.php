@@ -48,6 +48,16 @@
 			</div>
 		</div>
 	</div>
+	<?php 
+	$sql = "SELECT * FROM `product_delivered`";
+	$result	= mysqli_query($db, $sql);
+	$total=0;
+	while($row = mysqli_fetch_assoc($result)){
+		$total = $total + $row['tax_rate'];
+	}; 
+	echo "\n". $total;
+	?>
+	
 	<script src="../bootstrap4/jquery/jquery.min.js"></script>
 	<script src="../bootstrap4/js/jquery.dataTables.js"></script>
 	<script src="../bootstrap4/js/dataTables.bootstrap4.min.js"></script>
